@@ -1,0 +1,58 @@
+<?xml version="1.0"  encoding="UTF-8" ?>
+<project name="JfinalWeb" basedir="." default="default">
+
+		<property name="java.home" value="${env.JAVA_HOME}"/>
+        <property name="src.dir" value="${basedir}/src"/>
+        <property name="target.dir" value="${basedir}/target"/>
+		<property name="target.bulid" value="${basedir}/target/bulid"/>
+	    <property name ="lib.home"  value ="lib"   /> 
+
+	<target name="clean">
+				<delete failonerror="false" includeEmptyDirs="true">
+					<fileset dir="${target.dir}" includes="**/*"/>
+				</delete>
+	</target>
+	
+	<target name="init">
+	        	<mkdir dir="${target.dir}"/>
+	     		<mkdir dir="${target.bulid}"/>
+	</target>
+	
+	<path id="classpath">
+		<fileset dir="${basedir}/WebRoot/WEB-INF/lib">
+			<include name="**/*.jar"/>
+		</fileset>
+	</path>
+
+   <target name="build">
+        <javac srcdir="${src.dir}" destdir="${target.dir}/bulid" debug="true" encoding="utf-8">
+			<classpath refid="classpath"/>
+	    </javac>
+   	
+   		<copy todir="${target.bulid}/WebRoot">
+   		        	<fileset dir="WebRoot"/>
+   		</copy>
+  	
+   </target>
+	
+    <target name="jar">
+    	
+    	<pathconvert property="mf.classpath" pathsep=" ./lib/">  
+    	    	        <path refid="classpath" />  
+    	    	        <flattenmapper />  
+    	</pathconvert> 
+    	
+		<jar basedir="${target.dir}/bulid" jarfile="${target.dir}/jfinalWeb.jar" encoding="utf-8" >
+			<manifest>  
+			     <attribute name="Main-Class" value="com.demo.common.DemoConfig"/>  
+				 <attribute name="Class-Path" value="lib/${mf.classpath}"/>  
+			</manifest>  
+    	</jar>
+    	
+    </target>
+	
+			
+	 <target name="default" depends="clean,init,build,jar">
+	 </target>
+	
+    </project>

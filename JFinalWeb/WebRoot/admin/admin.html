@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+<style>
+*{ margin:0; padding:0;}
+li{ list-style:none;} 
+a{ text-decoration:none;}body{ background-color:#f0f0f0;}
+.topbox{ height:60px; background-color:#111111;}
+.nav{ width:980px; margin:0 auto; overflow:hidden;}
+.nav a{ color:#999999; font-size:20px; font-family:"微软雅黑" arial; display:block; width:140px; float:left; text-align:center; line-height:60px; }
+.nav a:hover{ color:#b3d465;}
+
+.container{ width:980px; margin:0 auto; margin-top:30px;}
+.leftbox{ width:664px; background-color:#ffffff; float:left;}
+.title{ width:664px; height:36px; background-color:#b5b5b5; }
+dd{ width:649px; background-image:url(image/line.png); background-repeat:repeat-x;background-position:left bottom; overflow:hidden; margin-left:15px; overflow:hidden;}
+.title a{color:#7b7b7b; font-family:"微软雅黑"； font-size:20px; line-height:36px; margin-left:15px; font-weight:bold;}
+dd a{ font-size:12px; color:#789d5d; line-height:40px; display:block; float:left;}
+dd a:hover{ color:#C00;}
+.a1{ background-image:url(image/icon.png); background-repeat:no-repeat; background-position:left center; padding-left:10px; }
+.a2{ margin-left:270px;}
+.a3{ margin-left:75px;}
+.a4{ margin-left:20px;}
+/*翻页*/
+.pages{ width:649px; overflow:hidden; padding-left:15px; margin-top:25px; margin-bottom:40px;font-size:12px; color:#505050;}
+.pagesLeft{ display:block; float:left;}
+.pagesRight{ float:right; width:300px;}
+.pagesRight input{ color:#303030;line-height:20px; text-align:center;margin-right:6px;}
+.a01{ width:36px; background-color:#dcd9d4; float:left; }
+.a02{ width:48px; background-color:#dcd9d4; float:left;}
+.a03{ width:18px; height:18px; border:#dcd9d4 1px solid; background-color:#eeeeee;float:left; }
+.a04{ width:48px; background-color:#dcd9d4;float:left; }
+.b0{ float:left;}
+.a05{width:18px; height:18px;}
+.a0{ line-height:20px;}
+.a06{ width:36px; background-color:#dcd9d4; float:left;}
+
+
+.rightbox{ float:right; width:300px;}
+.righttop{ width:300px; height:345px; background-color:#dcdcdc; }
+.Rt1{ display:block; background-color:#b5b5b5; width:285px; height:36px; color:#7b7b7b; font-family:"微软雅黑"； font-size:20px; line-height:36px; padding-left:15px; font-weight:bold;}
+.box1{ width:300px; overflow:hidden; margin-top:15px;}
+.c1{ display:block;color:#7b7b7b; font-size:12px; font-weight:bold; line-height:24px; width:75px; float:left; text-align:right;}
+.inputbox{ width:300px; height:310px;;}
+input{ height:22px; border:1px solid #7b7b7b; }
+.i1{ width:112px;float:left;}
+.i2{ width:70px; height:24px; background-color:#b3d465; margin-left:16px;float:left;}
+.i3{ width:198px;float:left;}
+.i4{width:70px; height:24px; background-color:#b3d465; margin-left:16px; margin-left:125px; margin-top:20px;}
+
+
+
+.rightbottom{width:300px; height:185px; background-color:#dcdcdc; margin-top:15px;}
+.box2{ margin-top:20px;}
+.i5{ width:158px; margin-left:40px;}
+.i6{ width:50px; height:24px; background-color:#b3d465; margin-left:20px;}
+.i7{width:60px; height:24px; background-color:#b3d465; margin-left:109px; margin-top:20px;}
+
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>博客后台</title>
+</head>
+
+<body>
+<div class="topbox">
+	<div class="nav">
+    	<a href="#" style="color:#b3d465">全部文章</a>
+    	<a href="#">java</a>
+    	<a href="#">socket</a>
+    	<a href="#">web</a>
+    	<a href="#">linux</a>
+    	<a href="#">原创</a>
+    	<a href="#">Idol Pic</a>
+    </div>
+</div>
+<div class="container">
+	<div class="leftbox">
+    <dl>
+        <dt class="title"><a>全部文章</a></dt>
+        
+        <!-- <dd><a class="a1" href="#">JDK 1.5、1.6和1.7区别</a><a class="a2">2014-6-22</a><a class="a3" href="#">[编辑]</a><a class="a4" href="#">删除</a></dd>
+        <dd><a class="a1" href="#">JDK 1.5、1.6和1.7区别</a><a class="a2">2014-6-22</a><a class="a3" href="#">[编辑]</a><a class="a4" href="#">删除</a></dd>
+        <dd><a class="a1" href="#">JDK 1.5、1.6和1.7区别</a><a class="a2">2014-6-22</a><a class="a3" href="#">[编辑]</a><a class="a4" href="#">删除</a></dd>
+        <dd><a class="a1" href="#">JDK 1.5、1.6和1.7区别</a><a class="a2">2014-6-22</a><a class="a3" href="#">[编辑]</a><a class="a4" href="#">删除</a></dd>
+        <dd><a class="a1" href="#">JDK 1.5、1.6和1.7区别</a><a class="a2">2014-6-22</a><a class="a3" href="#">[编辑]</a><a class="a4" href="#">删除</a></dd>
+        <dd><a class="a1" href="#">JDK 1.5、1.6和1.7区别</a><a class="a2">2014-6-22</a><a class="a3" href="#">[编辑]</a><a class="a4" href="#">删除</a></dd>
+        <dd><a class="a1" href="#">JDK 1.5、1.6和1.7区别</a><a class="a2">2014-6-22</a><a class="a3" href="#">[编辑]</a><a class="a4" href="#">删除</a></dd>
+        <dd><a class="a1" href="#">JDK 1.5、1.6和1.7区别</a><a class="a2">2014-6-22</a><a class="a3" href="#">[编辑]</a><a class="a4" href="#">删除</a></dd>
+        <dd><a class="a1" href="#">JDK 1.5、1.6和1.7区别</a><a class="a2">2014-6-22</a><a class="a3" href="#">[编辑]</a><a class="a4" href="#">删除</a></dd>
+        <dd><a class="a1" href="#">JDK 1.5、1.6和1.7区别</a><a class="a2">2014-6-22</a><a class="a3" href="#">[编辑]</a><a class="a4" href="#">删除</a></dd>
+        <dd><a class="a1" href="#">JDK 1.5、1.6和1.7区别</a><a class="a2">2014-6-22</a><a class="a3" href="#">[编辑]</a><a class="a4" href="#">删除</a></dd>
+        <dd><a class="a1" href="#">JDK 1.5、1.6和1.7区别</a><a class="a2">2014-6-22</a><a class="a3" href="#">[编辑]</a><a class="a4" href="#">删除</a></dd>
+        <dd><a class="a1" href="#">JDK 1.5、1.6和1.7区别</a><a class="a2">2014-6-22</a><a class="a3" href="#">[编辑]</a><a class="a4" href="#">删除</a></dd>
+        <dd><a class="a1" href="#">JDK 1.5、1.6和1.7区别</a><a class="a2">2014-6-22</a><a class="a3" href="#">[编辑]</a><a class="a4" href="#">删除</a></dd>
+        <dd><a class="a1" href="#">JDK 1.5、1.6和1.7区别</a><a class="a2">2014-6-22</a><a class="a3" href="#">[编辑]</a><a class="a4" href="#">删除</a></dd>
+        <dd><a class="a1" href="#">JDK 1.5、1.6和1.7区别</a><a class="a2">2014-6-22</a><a class="a3" href="#">[编辑]</a><a class="a4" href="#">删除</a></dd>
+        <dd><a class="a1" href="#">JDK 1.5、1.6和1.7区别</a><a class="a2">2014-6-22</a><a class="a3" href="#">[编辑]</a><a class="a4" href="#">删除</a></dd>
+        <dd><a class="a1" href="#">JDK 1.5、1.6和1.7区别</a><a class="a2">2014-6-22</a><a class="a3" href="#">[编辑]</a><a class="a4" href="#">删除</a></dd>
+        <dd><a class="a1" href="#">JDK 1.5、1.6和1.7区别</a><a class="a2">2014-6-22</a><a class="a3" href="#">[编辑]</a><a class="a4" href="#">删除</a></dd>
+        <dd><a class="a1" href="#">JDK 1.5、1.6和1.7区别</a><a class="a2">2014-6-22</a><a class="a3" href="#">[编辑]</a><a class="a4" href="#">删除</a></dd> -->
+        
+        <#list blog.getList() as b>
+			<dd><a class="a1" href="/blog/look/${b.id}">${b.title}</a><a class="a2">${b.id}</a><a class="a3" href="#">[编辑]</a><a class="a4" href="#">删除</a></dd>
+	  	</#list>
+	  	
+    </dl>
+    <div class="pages">
+       	<div class="pagesLeft">共20条 每页20条 页次：1/1</div>
+        <div class="pagesRight">
+            <input  class="a01"type="button" value="首页">
+            <input class="a02"type="button" value="上一页">
+            <input class="a03"value="1">
+            <input class="a04"type="button" value="上一页">
+            <div class="b0"><a class="a0">第</a><input class="a05"><a class="a0">页</a></div>
+            <input class="a06" type="button" value="尾页">
+          </div>
+     </div>
+    </div>
+
+    <div class="rightbox">
+    <div class="righttop">
+    	<a class="Rt1">网页抓取</a>
+        <div class="box1"><a class="c1">DOMAIN:</a><input type="text" name="domain" class="i1"><input class="i2" id="search" type="button" value="search"></div>
+        <div class="box1"><a class="c1">ID:</a><input type="text" name="id" class="i3"></div>
+        <div class="box1"><a class="c1">VALUE:</a><input type="text" name="value" class="i3"></div>
+        <div class="box1"><a class="c1">URL:</a><input type="text" name="url" class="i3"></div>
+        <div class="box1"><a class="c1">Tittle:</a><input type="text" name="title" class="i3"></div>
+        <div class="box1"><a class="c1">Type:</a><input type="text" name="jtype" class="i3"></div>
+      <input id="catchHtml" class="i4" type="button" value="catch">
+    </div>
+    
+    <div class="rightbottom">
+    	<a class="Rt1">收藏夹导入</a>
+        <div class="box2"><input class="i5" ><input class="i6" type="button" value="浏览"></div>
+        <input class="i7" type="button" value="导入">
+    </div>
+    </div>
+</div>
+
+
+<script src="/js/jquery-1.10.2.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html xmlns:wb=“http://open.weibo.com/wb”>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="wb:webmaster" content="c7fd8e439c7e5411" />
+    <meta name="keywords" content="飞翔的胖子博客" />
+    <meta name="description" content="flyingfat blogs">
+    <meta name="author" content="@terry">
+    <title>flyingfat</title>
+    <!-- Bootstrap and demo CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="/css/demo.css" rel="stylesheet">
+    <!-- Yamm styles-->
+    <link href="/css/yamm.css" rel="stylesheet">
+    
+    <style type="text/css">
+		
+		#catch{
+			width: 300px;
+			height: 300px
+		}
+
+		#catch li input{
+			 float: right;
+		    margin-left: 10px;
+		    margin-right: 10px;
+		    width: 200px;
+		}
+		
+		#catch li span{
+			margin-left: 20px
+		}
+    	
+    	#catch li a{
+			width: 150px
+		}
+		
+		#catch li select{
+			width: 110px;
+			margin-left: 10px;
+		}
+    	
+    	#search{
+		    float: right;
+   		    margin-right: 10px;
+    	}
+    	
+    	#catchHtml{
+    		margin-left: 120px;
+    	}
+    	
+    	
+    	
+    </style>
+
+</head>
+
+<body style="padding-bottom: 0px;">
+
+<div class="navbar yamm navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle">
+          	<span class="icon-bar"></span>
+          	<span class="icon-bar"></span><span class="icon-bar"></span>
+          </button>
+          <a href="/blog" class="navbar-brand">hi,fat</a>
+        </div>
+        <div id="navbar-collapse-1" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+          
+          
+            <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">java<b class="caret"></b></a>
+              <ul role="java" class="dropdown-menu">
+              	<#list java.getList() as java>
+	                <li><a tabindex="-1" href="/blog/look/${java.id}" > ${java.title} </a></li>
+	            </#list>
+                <li class="divider"></li>
+                <li><a tabindex="-1" href="/blog/more/${java.getList().get(0).jtype}"> more </a></li>
+              </ul>
+            </li>
+            
+            <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">socket<b class="caret"></b></a>
+              <ul role="socket" class="dropdown-menu">
+              	<#list socket.getList() as socket>
+                	<li><a tabindex="-1" href="/blog/look/${socket.id}"> ${socket.title} </a></li>
+                </#list>
+                <li class="divider"></li>
+                <li><a tabindex="-1" href="/blog/more/${socket.getList().get(0).jtype}"> more </a></li>
+              </ul>
+            </li>
+            
+            <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">web<b class="caret"></b></a>
+              <ul role="web" class="dropdown-menu">
+              	<#list web.getList() as web>
+               		<li><a tabindex="-1" href="/blog/look/${web.id}">${web.title}</a></li>
+              	</#list>
+                <li class="divider"></li>
+                <li><a tabindex="-1" href="/blog/more/${web.getList().get(0).jtype}"> more </a></li>
+              </ul>
+            </li>
+            
+            <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">linux<b class="caret"></b></a>
+              <ul role="linux" class="dropdown-menu">
+              <#list linux.getList() as linux>
+                <li><a tabindex="-1" href="/blog/look/${linux.id}"> ${linux.title} </a></li>
+              </#list>
+                <li class="divider"></li>
+                <li><a tabindex="-1" href="/blog/more/${linux.getList().get(0).jtype}"> more </a></li>
+              </ul>
+            </li>
+            
+             <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">原创<b class="caret"></b></a>
+              <ul role="mine" class="dropdown-menu">
+              <#list mine.getList() as mine>
+                <li><a tabindex="-1" href="/blog/look/${mine.id}"> ${mine.title} </a></li>
+              </#list>
+                <li class="divider"></li>
+                <li><a tabindex="-1" href="/blog/more/${mine.getList().get(0).jtype}"> more </a></li>
+              </ul>
+            </li>
+            
+            <!-- Pictures -->
+            <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Idol Pic<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <div class="yamm-content">
+                    <div class="row">
+                      <div class="col-xs-6 col-sm-2"><a href="#" class="thumbnail"><img alt="150x190" src="/image/cp3.jpg"></a></div>
+                      <div class="col-xs-6 col-sm-2"><a href="#" class="thumbnail"><img alt="150x190" src="/image/no1.jpg"></a></div>
+                      <div class="col-xs-6 col-sm-2"><a href="#" class="thumbnail"><img alt="150x190" src="/image/no11.jpg"></a></div>
+                      <div class="col-xs-6 col-sm-2"><a href="#" class="thumbnail"><img alt="150x190" src="/image/no5.jpg"></a></div>
+                      <div class="col-xs-6 col-sm-2"><a href="#" class="thumbnail"><img alt="150x190" src="/image/no34.jpg"></a></div>
+                      <div class="col-xs-6 col-sm-2"><a href="#" class="thumbnail"><img alt="150x190" src="/image/no20.jpg"></a></div>                   
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            
+           <!--  <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">catch<b class="caret"></b></a>
+              <ul id="catch" class="dropdown-menu">
+                <li><span>DOMAIN</span>
+                	<input type="text" name="domain" style="margin-left: 10px;margin-right: 10px;width: 100px;float: initial" />
+                	<div id="search" class="btn btn-default" >search</div>
+                </li><br>
+                
+                <li><span>ID</span><input type="text" name="id" /></li><br>
+                <li><span>VALUE</span><input type="text" name="value" /></li><br>
+                
+                <li><span>URL</span><input type="text" name="url" /></li><br>
+                <li><span>Title</span><input type="text" name="title" /></li>
+                <li><span>type</span><input type="text" name="jtype" /></li>
+                <li>
+                	<div id="catchHtml" class="btn btn-default" >catch</div>
+                </li>
+              </ul>
+            </li> -->
+            
+          </ul>
+        </div>
+      </div>
+</div>
+
+

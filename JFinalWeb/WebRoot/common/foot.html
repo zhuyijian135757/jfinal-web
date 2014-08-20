@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<style type="text/css">
+
+.footer {
+    min-width: 990px;
+    width: 100%;
+    margin-top: 0px
+}
+	
+.clear:after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.footer-link {
+    background: none repeat scroll 0 0 #F9F9F9;
+    border-bottom: 2px solid #FFFFFF;
+    position: relative;
+}
+
+.footer-link .footer-link-inner {
+    margin: 0 auto;
+    width: 1240px;
+}
+
+.footer-link dl {
+    float: left;
+    margin: 0;
+    padding: 25px 0 45px;
+}
+
+.footer-link dt {
+    color: #333333;
+    font-size: 16px;
+    margin: 0;
+    padding: 0 0 10px;
+}
+
+
+.footer-link dd {
+    float: left;
+    margin: 0;
+    padding: 0 30px 0 0;
+}
+
+
+.footer-link a {
+    color: #999999;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer-link dl.about {
+    padding-left: 7%;
+}
+
+.footer-link dl.follow {
+    float: right;
+    position: relative;
+}
+
+
+.footer-link dl.follow dt {
+    text-align: right;
+}
+
+.footer-link dl.follow dd {
+    padding: 0 0 0 40px;
+    text-align: right;
+}
+
+.footer-link .icon-tsina {
+    background-position: 0 -115px !important;
+}
+
+.footer-link .icon-tqq {
+    background-position: 0 -235px !important;
+}
+
+
+.footer-link .icon-tzone {
+    background-position: 0 -75px !important;
+}
+
+.footer-link .icon {
+    background: url("/image/is.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 24px;
+    width: 24px;
+}
+
+.icon {
+    background: url("/image/is.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 20px;
+    vertical-align: middle;
+    width: 20px;
+}
+
+
+
+	
+</style>
+
+<footer class="footer">
+    <div class="footer-link clear">
+    	<div class="footer-link-inner">
+            <dl>
+                <dt>关于</dt>
+                <dd><a href="#" target="_blank">作者</a></dd>
+                <dd><a href="#" target="_blank">博文说明</a></dd>
+                <dd><a href="#" target="_blank">网站版权</a></dd>
+            </dl>
+            <dl class="about">
+                <dt>友情链接</dt>
+                <dd><a href="http://www.csdn.net/" target="_blank">CSDN</a></dd>
+                <dd><a href="http://www.oschina.net/" target="_blank">OSCHINA</a></dd>
+                <dd><a href="http://www.cnblogs.com/" target="_blank">CNBLOGS</a></dd>
+                <dd><a href="http://www.iteye.com/" target="_blank">ITEYE</a></dd>
+                <dd><a href="https://www.ibm.com/developerworks/cn/java/" target="_blank">IBM</a></dd>
+            </dl>
+            <dl style=" position:relative;" class="follow">
+                <dt>分享</dt>
+                <dd>
+                	<wb:share-button appkey="L9EMb" addition="simple" type="button"></wb:share-button>
+                </dd>
+                <dd>
+                	<div id="qqwb_share__" data-appkey="801514192" data-icon="1" data-counter="0" data-content="{飞翔的胖子}" data-pic="{pic}"></div>
+                </dd>
+                <dd>
+                	
+                <script type="text/javascript">
+				(function(){
+				var p = {
+				url:location.href,
+				showcount:'1',/*是否显示分享总数,显示：'1'，不显示：'0' */
+				desc:'飞翔吧胖子',/*默认分享理由(可选)*/
+				summary:'',/*分享摘要(可选)*/
+				title:'飞翔的胖子',/*分享标题(可选)*/
+				site:'flyingfat.net',/*分享来源 如：腾讯网(可选)*/
+				pics:'/image/no1.png', /*分享图片的路径(可选)*/
+				style:'102',
+				width:145,
+				height:30
+				};
+				var s = [];
+				for(var i in p){
+				s.push(i + '=' + encodeURIComponent(p[i]||''));
+				}
+				document.write(['<a version="1.0" class="qzOpenerDiv" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?',s.join('&'),'" target="_blank">分享</a>'].join(''));
+				})();
+				</script>
+
+                	
+                </dd>
+                <div class="qrcode" id="qrcode"></div>
+            </dl>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Bootstrap core JavaScript-->
+<script src="/js/jquery-1.10.2.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+<script src="http://mat1.gtimg.com/app/openjs/openjs.js#autoboot=no&debug=no"></script>
+<script src="http://qzonestyle.gtimg.cn/qzone/app/qzlike/qzopensl.js#jsdate=20111201" charset="utf-8"></script>
+<script src="/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<#include "/common/head.html"/>
+<style type="text/css">
+.text{
+	font-size: 15px;
+	text-decoration: none;
+}
+
+.left{
+	 float:left;
+	 width: 400px;
+	 margin-left: 30px;
+	 margin-top: 30px;
+	 list-style-type:none;
+	 
+}
+
+.ri{
+	 float:left;
+	 width: 400px;
+	 margin-left: 30px;
+	 margin-top: 30px;
+	 list-style-type:none;
+	 
+	 overflow: hidden; 
+	 white-space: nowrap; 
+	 text-overflow: ellipsis;
+}
+
+.left li{
+	overflow: hidden; 
+	white-space: nowrap; 
+	text-overflow: ellipsis;
+}
+
+.ri li{
+	 overflow: hidden; 
+	 white-space: nowrap; 
+	 text-overflow: ellipsis;
+}
+
+</style>
+    
+
+<div class="jumbotron intro">
+  <div class="container">
+  	   
+  	    <ul class="left">
+	  		<#list more.getList() as m>
+	  			<#if m_index%2==0>
+	  				<li><a class="text" href="/blog/look/${m.id}">${m.title}</a></li>
+	  			</#if>
+	  		</#list>
+	  	</ul>
+	  	
+	  	 <ul class="ri">
+	  		<#list more.getList() as m>
+	  			<#if m_index%2!=0>
+	  				<li><a class="text" href="/blog/look/${m.id}">${m.title}</a></li>
+	  			</#if>
+	  		</#list>
+	  	</ul>
+	  	
+  </div>
+</div>
+
+<#include "/common/foot.html"/>
+
+
+
